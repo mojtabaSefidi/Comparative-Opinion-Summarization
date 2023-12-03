@@ -48,5 +48,5 @@ def add_details(dict_hotels):
       detail['Comment'] = merged_comments.strip()
       reviews.append(detail)
     
-  dict_hotels[hotel]['Reviews'] = reviews
+    dict_hotels[hotel]['Reviews'] = reviews
   return dict_hotels
