@@ -20,4 +20,4 @@
   * Note_1: You could customize the initial_prompt
   * Note_2: You should customize generate_prompt() in gpt_functions.py based on the structure of reviews.
 
-Contact me for any possible issues.
+#### Feel free to contact me for any possible issues.
