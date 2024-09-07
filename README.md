@@ -1,23 +1,30 @@
-# Comparative-Opinion-Summarization-Data-Genarator
+# Comparative Opinion Summarization Data Generator
 
-## Usage:
+## Introduction
 
-**1. Collecting reviews:**
-  * Go to data_collector.py
-  * customize get_hotels_city & add_details functions based on the structure of the website you're collecting data from. I implemented these functions based on Eghatam24.com
-  * note: I collect extra hotel information, such as addresses, average scores, stars, etc. You only need the name of the hotel and its corresponding reviews.
+This repository provides a tool for generating comparative summaries of hotel reviews using GPT-based models. The tool allows users to collect hotel reviews from various websites, prepare data, and generate comparison summaries between two hotels. It is designed to streamline the process of review collection, data preparation, and summary generation, leveraging the power of GPT to create insightful comparisons based on user reviews.
 
-**2. Preparing GPT client:**
-  * Go to Main.ipynb
-  * You need an openai API key to build your GPT client
-  * build your client
+## Usage
 
-**3. Generating Results:**
-  * Go to Main.ipynb
-  * Specify Hotel_A & Hotel_B
-  * Build the final prompt based on their reviews
-  * Give the final prompt to the gpt client and get the result
-  * Note_1: You could customize the initial_prompt
-  * Note_2: You should customize generate_prompt() in gpt_functions.py based on the structure of reviews.
+### 1. Collecting Reviews
+* Navigate to `data_collector.py`.
+* Customize the `get_hotels_city` and `add_details` functions according to the structure of the website you're collecting data from. The current implementation is tailored for Eghatam24.com.
+* **Note:** This script also collects extra information about hotels (e.g., addresses, average scores, stars, etc.), but the primary data needed are the hotel names and their respective reviews.
 
-#### Feel free to contact me for any possible issues.
+### 2. Preparing GPT Client
+* Open `Main.ipynb`.
+* You will need an OpenAI API key to create your GPT client.
+* Build and configure your client in this notebook.
+
+### 3. Generating Results
+* In `Main.ipynb`, specify `Hotel_A` and `Hotel_B`.
+* Construct the final prompt using the collected reviews for these two hotels.
+* Pass the final prompt to the GPT client to generate the comparison result.
+  * **Note 1:** You can customize the `initial_prompt` as per your requirement.
+  * **Note 2:** Modify the `generate_prompt()` function in `gpt_functions.py` to fit the structure of your reviews.
+
+---
+
+Feel free to reach out for any issues or questions!
+
+--- 
