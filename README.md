@@ -14,7 +14,7 @@
 
 **3. Generating Results:**
   * Go to Main.ipynb
-  * Specify Hotel_A & Hotel_A
+  * Specify Hotel_A & Hotel_B
   * Build the final prompt based on their reviews
   * Give the final prompt to the gpt client and get the result
   * Note_1: You could customize the initial_prompt
